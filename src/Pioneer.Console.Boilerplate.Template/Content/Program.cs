@@ -25,15 +25,16 @@ namespace Pioneer.Console.Boilerplate
         private static void ConfigureServices(IServiceCollection serviceCollection)
         {
             // add logging
-            serviceCollection.AddSingleton(new LoggerFactory()
-                .AddConsole()
-                .AddDebug());
-            serviceCollection.AddLogging(); 
+            serviceCollection.AddLogging(options =>
+            {
+                options.AddConsole();
+                options.AddDebug();
+            });
 
             // build configuration
             var configuration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("app-settings.json", false)
+                .AddJsonFile("appsettings.json", false)
                 .Build();
 
             serviceCollection.AddOptions();
