@@ -17,13 +17,13 @@ Clone this repository.
 Once the template is installed and available in  ```dotnet new```, you can run the following to scaffold your new project using this template.
 
 ```bash
-dotnet new pioneer-console -n "MyName"
+dotnet new console.di -n "MyName"
 ```
 
 For additional information about config switches for the template, run the following...
 
 ```bash
-dotnet new pioneer-console -h
+dotnet new console.di -h
 ```
 
 ### Configuration
