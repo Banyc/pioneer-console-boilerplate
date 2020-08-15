@@ -5,9 +5,9 @@
   "tags": {
     "language": "C#"
   },
-  "identity": "Pioneer.Console.Boilerplate",
+  "identity": "ConsoleDiTemplate",
   "shortName": "console.di",
-  "sourceName": "Pioneer.Console.Boilerplate",
+  "sourceName": "ConsoleDiTemplate",
   "symbols": {
     "title": {
       "type": "parameter",

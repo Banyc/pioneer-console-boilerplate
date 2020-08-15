@@ -1,8 +1,8 @@
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using Pioneer.Console.Boilerplate.Models;
+using ConsoleDiTemplate.Models;
 
-namespace Pioneer.Console.Boilerplate.Services
+namespace ConsoleDiTemplate.Services
 {
     public interface ITestService
     {

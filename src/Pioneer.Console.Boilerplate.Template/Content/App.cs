@@ -1,9 +1,9 @@
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using Pioneer.Console.Boilerplate.Models;
-using Pioneer.Console.Boilerplate.Services;
+using ConsoleDiTemplate.Models;
+using ConsoleDiTemplate.Services;
 
-namespace Pioneer.Console.Boilerplate
+namespace ConsoleDiTemplate
 {
     public class App
     {

@@ -2,10 +2,10 @@ using System.IO;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Pioneer.Console.Boilerplate.Models;
-using Pioneer.Console.Boilerplate.Services;
+using ConsoleDiTemplate.Models;
+using ConsoleDiTemplate.Services;
 
-namespace Pioneer.Console.Boilerplate
+namespace ConsoleDiTemplate
 {
     public class Program
     {

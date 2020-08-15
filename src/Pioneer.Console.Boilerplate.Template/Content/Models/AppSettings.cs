@@ -1,4 +1,4 @@
-namespace Pioneer.Console.Boilerplate.Models
+namespace ConsoleDiTemplate.Models
 {
     public class AppSettings
     {
