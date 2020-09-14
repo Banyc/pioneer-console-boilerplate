@@ -24,18 +24,19 @@ namespace ConsoleDiTemplate
 
         private static void ConfigureServices(IServiceCollection serviceCollection)
         {
-            // add logging
-            serviceCollection.AddLogging(options =>
-            {
-                options.AddConsole();
-                options.AddDebug();
-            });
-
             // build configuration
             var configuration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json", false)
                 .Build();
+
+            // add logging
+            serviceCollection.AddLogging(options =>
+            {
+                options.AddConfiguration(configuration.GetSection("Logging"));
+                options.AddConsole();
+                options.AddDebug();
+            });
 
             serviceCollection.AddOptions();
             serviceCollection.Configure<AppSettings>(configuration.GetSection("Configuration"));
