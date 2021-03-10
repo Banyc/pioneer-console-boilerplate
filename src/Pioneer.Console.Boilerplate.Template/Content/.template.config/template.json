@@ -1,7 +1,7 @@
 ﻿{
-  "author": "Chad Ramos <chad@pioneercode.com>",
-  "classifications": [ "Console", "Boilerplate", "Dependency Injection", "Logging", "Configuration" ],
-  "name": "Pioneer Code: Console Application with dependency injection, logging & configuration.",
+  "author": "Banyc <>",
+  "classifications": [ "Common/Console" ],
+  "name": "Console Application with DI/logging/config",
   "tags": {
     "language": "C#"
   },
